@@ -73,7 +73,7 @@ header {
 
 .menu img {
   cursor: pointer;
-  height: 4rem;
+  height: 3.5rem;
 }
 
 /* SIDE STYLES */
@@ -191,5 +191,9 @@ header {
 }
 
 @media (min-width: 768px) {
+
+}
+
+@media (min-width: 1024px) {
 
 }
