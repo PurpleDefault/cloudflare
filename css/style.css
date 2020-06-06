@@ -26,19 +26,37 @@ button {
     outline: none;
 }
 
+nav {
+  text-transform: uppercase;
+  color: grey;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav ul li {
+  margin-right: 1rem;
+}
+
+nav ul li:hover {
+  color: lightgrey;
+  cursor: pointer;
+}
+
 /* FLEX STYLES */
 
-header, .logo, .menu {
+header, .logo, .menu, .login, nav ul, nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
-.logo, .menu, #submit_soc_btns {
+.logo, .menu, #submit_soc_btns, .login, nav {
   align-items: center;
 }
 
-main, .side {
+main, .side, .login-panel {
   display: flex;
   flex-direction: column;
 }
@@ -149,6 +167,7 @@ header {
 
 #submit_soc_btns {
   margin: 3rem 0;
+  margin-bottom: 1rem;
   padding: 2rem 0;
 }
 
@@ -190,10 +209,77 @@ header {
   background: url("../images/svg/youtube-brands.svg") no-repeat;
 }
 
-@media (min-width: 768px) {
+footer {
+  text-align: center;
+  padding: 3rem;
+}
 
+footer span {
+  color: #228CEE;
+}
+
+footer p {
+  border-top: 0.25rem solid #228CEE;
+  padding-top: 3rem;
+}
+
+#desk_layout {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  main {
+    margin: auto;
+    max-width: 40rem;
+  }
 }
 
 @media (min-width: 1024px) {
+  #phone_layout {
+    display: none;
+  }
+
+  #desk_layout {
+    display: flex;
+  }
+
+  main {
+    max-width: 60rem;
+    flex-direction: row;
+    margin-top: 10rem;
+    margin-bottom: 5rem;
+  }
+
+  .side {
+    width: 24rem;
+    padding: 1.5rem;
+  }
+
+  .login-panel {
+    flex-grow: 1;
+  }
+
+  .login-panel input {
+    margin-top: 2rem;
+  }
+
+  #submit_soc_btns {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 2rem;
+  }
+
+  #soc_btns {
+    margin: 0;
+  }
+
+  #submit_soc_btns button {
+    align-items: center;
+    font-size: 1rem;
+    margin: 0;
+    padding: 1rem 2rem;
+    font-weight: inherit;
+  }
 
 }
