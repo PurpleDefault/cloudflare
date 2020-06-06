@@ -18,6 +18,7 @@ button {
   background-color: #228CEE;
   border-radius: 25px;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 *:focus {
@@ -153,6 +154,7 @@ header {
   width: 2.5rem;
   background-size: contain;
   background-position: center;
+  cursor: pointer;
 }
 
 #face {
