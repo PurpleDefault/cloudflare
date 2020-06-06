@@ -13,6 +13,7 @@ body {
 
 button {
   border: none;
+  box-shadow: 0px 8px 21px -4px rgba(0,0,0,0.52);
   padding: 0.75rem 1.5rem;
   color: #FFF;
   background-color: #228CEE;
@@ -27,13 +28,13 @@ button {
 
 /* FLEX STYLES */
 
-header, .logo, .login, #submit_soc_btns {
+header, .logo, .menu {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
-.logo, .login {
+.logo, .menu, #submit_soc_btns {
   align-items: center;
 }
 
@@ -45,6 +46,7 @@ main, .side {
 #soc_btns {
   display: flex;
   flex-direction: row;
+  justify-content: center;
 }
 
 /* HEADER STYLES */
@@ -67,6 +69,11 @@ header {
 
 .logo span {
   font-weight: 100;
+}
+
+.menu img {
+  cursor: pointer;
+  height: 4rem;
 }
 
 /* SIDE STYLES */
@@ -141,15 +148,25 @@ header {
 }
 
 #submit_soc_btns {
-  padding: 3rem 0;
+  margin: 3rem 0;
+  padding: 2rem 0;
+}
+
+#submit_soc_btns button {
+  display: block;
+  margin: auto;
+  font-size: 1.75rem;
+  padding: 1.75rem 7.5rem;
+  font-weight: bold;
 }
 
 #soc_btns {
+  margin-top: 2rem;
   list-style-type: none;
 }
 
 #soc_btns li {
-  margin-left: 0.25rem;
+  margin-left: 0.75rem;
   height: 2.5rem;
   width: 2.5rem;
   background-size: contain;
@@ -171,4 +188,8 @@ header {
 
 #yout {
   background: url("../images/svg/youtube-brands.svg") no-repeat;
+}
+
+@media (min-width: 768px) {
+
 }
