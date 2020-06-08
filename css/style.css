@@ -44,6 +44,28 @@ nav ul li:hover {
   cursor: pointer;
 }
 
+#phone_nav {
+  position: absolute;
+  overflow: hidden;
+  text-transform: uppercase;
+  font-weight: 600;
+  background-color: #41444C;
+  height: 0;
+  width: 100%;
+  transition-duration: 0.5s;
+}
+
+#phone_nav li {
+  position: relative;
+  text-align: center;
+  padding: 2.75rem 0;
+  cursor: pointer;
+}
+
+#phone_nav li:hover {
+  background-color: #292B30;
+}
+
 /* FLEX STYLES */
 
 header, .logo, .menu, .login, nav ul, nav {
@@ -280,6 +302,10 @@ footer p {
     margin: 0;
     padding: 1rem 2rem;
     font-weight: inherit;
+  }
+
+  #phone_nav {
+    display: none;
   }
 
 }
